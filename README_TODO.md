@@ -4,7 +4,7 @@ Security camera running open-cv for object detection. The camera will send an em
 
 ## Setup
 
-TODOtest
+TODO
 
 ## Installing Dependencies
 
@@ -16,7 +16,7 @@ TODO
 
 ## Setup
 
-This project uses a USB Camera to stream video. Before running the code, make sure you have connected at least one USB Camera to your device.
+This project uses a USB Camera to stream video. Before running the code, make sure you have connected built in or USB Camera to your device.
 
 
 ## Installing Dependencies
@@ -56,6 +56,8 @@ from email.mime.image import MIMEImage
 ```
 print "" => print()
 ```
+*and probably few other things on your own*
+
 
 ## Customization
 
@@ -73,7 +75,7 @@ toEmail = 'anotheremail@gmail.com'
 ```
 and replace with your own email/credentials. The `mail.py` file logs into a gmail SMTP server and sends an email with an image of the object detected by the security camera. 
 
-Press `esc` then `ZZ` to save and exit.
+Press `esc` then `ZZ` or `:wq!` to save and exit.
 
 You can also modify the `main.py` file to change some other properties.
 
@@ -94,13 +96,13 @@ upperbody_recognition_model.xml
 
 ## Running the Program
 
-Run the program
+Run the program with command "python2 [name_of_application.py]"
 
 ```
 python main.py
 ```
 
-You can view a live stream by visiting the ip address of your pi in a browser on the same network. You can find the ip address of your Raspberry Pi by typing `ifconfig` in the terminal and looking for the `inet` address. 
+You can view a live stream by visiting the ip address of your pi in a browser on the same network on port 5000. You can find the ip address of your Raspberry Pi by typing `ifconfig` in the terminal and looking for the `inet` address in wlan0 network card. 
 
 Visit `<raspberrypi_ip>:5000` in your browser to view the stream.
 
