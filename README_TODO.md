@@ -4,7 +4,7 @@ Security camera running open-cv for object detection. The camera will send an em
 
 ## Setup
 
-TODO
+TODOtest
 
 ## Installing Dependencies
 
